@@ -1,0 +1,22 @@
+language: objective-c
+osx_image: xcode11.3
+cache:
+  bundler: true
+  cocoapods: true
+  directories:
+    - ~/.cocoapods
+    - ~/Library/Caches/CocoaPods
+    - .bundle
+    - vendor
+before_install:
+  # Upgrade Bundler 2.0
+  - gem update --system
+  - gem install bundler
+install:
+  - set -o pipefail
+  - sudo systemsetup -settimezone Asia/Ho_Chi_Minh
+  - bundle install --path=vendor/bundle --jobs 4 --retry 3
+script:
+  - bundle exec pod install --repo-update
+  - ./scripts/lint
+  - bundle exec fastlane tests
