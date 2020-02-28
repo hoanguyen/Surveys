@@ -10,11 +10,15 @@
 		1D477898499ECD1F2A690C2F /* Pods_Surveys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB2400FAE81A5992F8F69E9 /* Pods_Surveys.framework */; };
 		C0EE3EF1994DDE612D5CF055 /* Pods_SurveysTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424A0B893726CB176DD345B2 /* Pods_SurveysTests.framework */; };
 		FA2279492407705C0099B8CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2279482407705C0099B8CF /* AppDelegate.swift */; };
-		FA22794D2407705C0099B8CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22794C2407705C0099B8CF /* ViewController.swift */; };
 		FA2279502407705C0099B8CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA22794E2407705C0099B8CF /* Main.storyboard */; };
 		FA227952240770620099B8CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA227951240770620099B8CF /* Assets.xcassets */; };
 		FA227955240770620099B8CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA227953240770620099B8CF /* LaunchScreen.storyboard */; };
 		FA227960240770620099B8CF /* SurveysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22795F240770620099B8CF /* SurveysTests.swift */; };
+		FAC01FD32408CBA00096F3BC /* SurveyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FD22408CBA00096F3BC /* SurveyDetailViewController.swift */; };
+		FAC01FD52408CBD50096F3BC /* SurveysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FD42408CBD50096F3BC /* SurveysViewController.swift */; };
+		FAC01FD82408CC7D0096F3BC /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FD72408CC7D0096F3BC /* Token.swift */; };
+		FAC01FDC2408D00F0096F3BC /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FDB2408D00F0096F3BC /* Survey.swift */; };
+		FAC01FE02408D21B0096F3BC /* NimbleTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FDF2408D21B0096F3BC /* NimbleTarget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 		8CE80603D6B4D9AABB768B42 /* Pods-Surveys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Surveys.debug.xcconfig"; path = "Target Support Files/Pods-Surveys/Pods-Surveys.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2279452407705C0099B8CF /* Surveys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surveys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2279482407705C0099B8CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA22794C2407705C0099B8CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA22794F2407705C0099B8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA227951240770620099B8CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA227954240770620099B8CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +47,11 @@
 		FA22795B240770620099B8CF /* SurveysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA22795F240770620099B8CF /* SurveysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysTests.swift; sourceTree = "<group>"; };
 		FA227961240770620099B8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC01FD22408CBA00096F3BC /* SurveyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailViewController.swift; sourceTree = "<group>"; };
+		FAC01FD42408CBD50096F3BC /* SurveysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysViewController.swift; sourceTree = "<group>"; };
+		FAC01FD72408CC7D0096F3BC /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		FAC01FDB2408D00F0096F3BC /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		FAC01FDF2408D21B0096F3BC /* NimbleTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleTarget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +117,12 @@
 		FA2279472407705C0099B8CF /* Surveys */ = {
 			isa = PBXGroup;
 			children = (
-				FA2279482407705C0099B8CF /* AppDelegate.swift */,
-				FA22794C2407705C0099B8CF /* ViewController.swift */,
-				FA22794E2407705C0099B8CF /* Main.storyboard */,
-				FA227951240770620099B8CF /* Assets.xcassets */,
-				FA227953240770620099B8CF /* LaunchScreen.storyboard */,
-				FA227956240770620099B8CF /* Info.plist */,
+				FAC01FCE2408C9F10096F3BC /* Services */,
+				FAC01FCC2408C8D00096F3BC /* Views */,
+				FAC01FCB2408C8C70096F3BC /* Extensions */,
+				FAC01FCA2408C8B70096F3BC /* Models */,
+				FAC01FC92408C8A50096F3BC /* Controllers */,
+				FAC01FC82408C8930096F3BC /* Application */,
 			);
 			path = Surveys;
 			sourceTree = "<group>";
@@ -126,6 +134,98 @@
 				FA227961240770620099B8CF /* Info.plist */,
 			);
 			path = SurveysTests;
+			sourceTree = "<group>";
+		};
+		FAC01FC82408C8930096F3BC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FCD2408C9C20096F3BC /* Resource */,
+				FA2279482407705C0099B8CF /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FAC01FC92408C8A50096F3BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FD12408CAE10096F3BC /* SurveyDetail */,
+				FAC01FD02408CAD40096F3BC /* Surveys */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAC01FCA2408C8B70096F3BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FDB2408D00F0096F3BC /* Survey.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAC01FCB2408C8C70096F3BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAC01FCC2408C8D00096F3BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAC01FCD2408C9C20096F3BC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FA227956240770620099B8CF /* Info.plist */,
+				FA22794E2407705C0099B8CF /* Main.storyboard */,
+				FA227951240770620099B8CF /* Assets.xcassets */,
+				FA227953240770620099B8CF /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FAC01FCE2408C9F10096F3BC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FD92408CDF00096F3BC /* NimbleAPI */,
+				FAC01FD62408CC720096F3BC /* Core */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FAC01FD02408CAD40096F3BC /* Surveys */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FD42408CBD50096F3BC /* SurveysViewController.swift */,
+			);
+			path = Surveys;
+			sourceTree = "<group>";
+		};
+		FAC01FD12408CAE10096F3BC /* SurveyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FD22408CBA00096F3BC /* SurveyDetailViewController.swift */,
+			);
+			path = SurveyDetail;
+			sourceTree = "<group>";
+		};
+		FAC01FD62408CC720096F3BC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FD72408CC7D0096F3BC /* Token.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FAC01FD92408CDF00096F3BC /* NimbleAPI */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FDF2408D21B0096F3BC /* NimbleTarget.swift */,
+			);
+			path = NimbleAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +432,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA22794D2407705C0099B8CF /* ViewController.swift in Sources */,
+				FAC01FD32408CBA00096F3BC /* SurveyDetailViewController.swift in Sources */,
+				FAC01FD82408CC7D0096F3BC /* Token.swift in Sources */,
+				FAC01FE02408D21B0096F3BC /* NimbleTarget.swift in Sources */,
+				FAC01FDC2408D00F0096F3BC /* Survey.swift in Sources */,
+				FAC01FD52408CBD50096F3BC /* SurveysViewController.swift in Sources */,
 				FA2279492407705C0099B8CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,7 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QM237XU2M3;
-				INFOPLIST_FILE = Surveys/Info.plist;
+				INFOPLIST_FILE = Surveys/Application/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,7 +619,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QM237XU2M3;
-				INFOPLIST_FILE = Surveys/Info.plist;
+				INFOPLIST_FILE = Surveys/Application/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
