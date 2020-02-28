@@ -1,17 +1,16 @@
 //
-//  ViewController.swift
+//  SurveysViewController.swift
 //  Surveys
 //
-//  Created by mkvault on 2/27/20.
+//  Created by mkvault on 2/28/20.
 //  Copyright © 2020 Hoa Nguyen. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+final class SurveysViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 }
