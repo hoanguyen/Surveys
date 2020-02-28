@@ -19,6 +19,18 @@
 		FAC01FD82408CC7D0096F3BC /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FD72408CC7D0096F3BC /* Token.swift */; };
 		FAC01FDC2408D00F0096F3BC /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FDB2408D00F0096F3BC /* Survey.swift */; };
 		FAC01FE02408D21B0096F3BC /* NimbleTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FDF2408D21B0096F3BC /* NimbleTarget.swift */; };
+		FAC01FE324090EBB0096F3BC /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FE224090EBB0096F3BC /* Measure.swift */; };
+		FAC01FE524090F260096F3BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FE424090F260096F3BC /* Constants.swift */; };
+		FAC01FE7240910F70096F3BC /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FE6240910F70096F3BC /* UIScreen.swift */; };
+		FAC01FEB240912690096F3BC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FEA240912690096F3BC /* UIView.swift */; };
+		FAC01FEF240914B80096F3BC /* SurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FEE240914B80096F3BC /* SurveyCell.swift */; };
+		FAC01FF1240914ED0096F3BC /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF0240914ED0096F3BC /* SurveyViewModel.swift */; };
+		FAC01FF3240915E40096F3BC /* SurveysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF2240915E40096F3BC /* SurveysViewModel.swift */; };
+		FAC01FF5240916740096F3BC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF4240916740096F3BC /* Errors.swift */; };
+		FAC01FF7240917DE0096F3BC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF6240917DE0096F3BC /* String.swift */; };
+		FAC01FF92409192C0096F3BC /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF82409192C0096F3BC /* UICollectionView.swift */; };
+		FAC01FFB240919B30096F3BC /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FFA240919B30096F3BC /* UIImageView.swift */; };
+		FAC01FFD24091A960096F3BC /* NimbleNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FFC24091A960096F3BC /* NimbleNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +64,18 @@
 		FAC01FD72408CC7D0096F3BC /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		FAC01FDB2408D00F0096F3BC /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		FAC01FDF2408D21B0096F3BC /* NimbleTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleTarget.swift; sourceTree = "<group>"; };
+		FAC01FE224090EBB0096F3BC /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		FAC01FE424090F260096F3BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAC01FE6240910F70096F3BC /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		FAC01FEA240912690096F3BC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FAC01FEE240914B80096F3BC /* SurveyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCell.swift; sourceTree = "<group>"; };
+		FAC01FF0240914ED0096F3BC /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		FAC01FF2240915E40096F3BC /* SurveysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysViewModel.swift; sourceTree = "<group>"; };
+		FAC01FF4240916740096F3BC /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		FAC01FF6240917DE0096F3BC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FAC01FF82409192C0096F3BC /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		FAC01FFA240919B30096F3BC /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		FAC01FFC24091A960096F3BC /* NimbleNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +163,7 @@
 		FAC01FC82408C8930096F3BC /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				FAC01FE124090EA20096F3BC /* Constants */,
 				FAC01FCD2408C9C20096F3BC /* Resource */,
 				FA2279482407705C0099B8CF /* AppDelegate.swift */,
 			);
@@ -165,6 +190,11 @@
 		FAC01FCB2408C8C70096F3BC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FAC01FE6240910F70096F3BC /* UIScreen.swift */,
+				FAC01FEA240912690096F3BC /* UIView.swift */,
+				FAC01FF6240917DE0096F3BC /* String.swift */,
+				FAC01FF82409192C0096F3BC /* UICollectionView.swift */,
+				FAC01FFA240919B30096F3BC /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,6 +202,7 @@
 		FAC01FCC2408C8D00096F3BC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAC01FEC2409145E0096F3BC /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC01FD42408CBD50096F3BC /* SurveysViewController.swift */,
+				FAC01FF2240915E40096F3BC /* SurveysViewModel.swift */,
 			);
 			path = Surveys;
 			sourceTree = "<group>";
@@ -224,8 +256,36 @@
 			isa = PBXGroup;
 			children = (
 				FAC01FDF2408D21B0096F3BC /* NimbleTarget.swift */,
+				FAC01FFC24091A960096F3BC /* NimbleNetwork.swift */,
 			);
 			path = NimbleAPI;
+			sourceTree = "<group>";
+		};
+		FAC01FE124090EA20096F3BC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FE224090EBB0096F3BC /* Measure.swift */,
+				FAC01FE424090F260096F3BC /* Constants.swift */,
+				FAC01FF4240916740096F3BC /* Errors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FAC01FEC2409145E0096F3BC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FED240914900096F3BC /* SurveyCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAC01FED240914900096F3BC /* SurveyCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FEE240914B80096F3BC /* SurveyCell.swift */,
+				FAC01FF0240914ED0096F3BC /* SurveyViewModel.swift */,
+			);
+			path = SurveyCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,12 +492,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC01FE324090EBB0096F3BC /* Measure.swift in Sources */,
+				FAC01FF5240916740096F3BC /* Errors.swift in Sources */,
+				FAC01FF1240914ED0096F3BC /* SurveyViewModel.swift in Sources */,
+				FAC01FF3240915E40096F3BC /* SurveysViewModel.swift in Sources */,
 				FAC01FD32408CBA00096F3BC /* SurveyDetailViewController.swift in Sources */,
+				FAC01FEB240912690096F3BC /* UIView.swift in Sources */,
 				FAC01FD82408CC7D0096F3BC /* Token.swift in Sources */,
 				FAC01FE02408D21B0096F3BC /* NimbleTarget.swift in Sources */,
+				FAC01FE7240910F70096F3BC /* UIScreen.swift in Sources */,
 				FAC01FDC2408D00F0096F3BC /* Survey.swift in Sources */,
+				FAC01FFB240919B30096F3BC /* UIImageView.swift in Sources */,
 				FAC01FD52408CBD50096F3BC /* SurveysViewController.swift in Sources */,
 				FA2279492407705C0099B8CF /* AppDelegate.swift in Sources */,
+				FAC01FFD24091A960096F3BC /* NimbleNetwork.swift in Sources */,
+				FAC01FEF240914B80096F3BC /* SurveyCell.swift in Sources */,
+				FAC01FE524090F260096F3BC /* Constants.swift in Sources */,
+				FAC01FF7240917DE0096F3BC /* String.swift in Sources */,
+				FAC01FF92409192C0096F3BC /* UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
