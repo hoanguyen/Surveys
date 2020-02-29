@@ -81,4 +81,8 @@ extension NimbleTarget: TargetType {
     var sampleData: Data {
         return Data()
     }
+
+    var validationType: ValidationType {
+        return .successAndRedirectCodes
+    }
 }

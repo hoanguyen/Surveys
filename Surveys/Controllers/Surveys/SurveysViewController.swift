@@ -12,6 +12,8 @@ import Moya
 final class SurveysViewController: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
     @IBOutlet private weak var pageControl: UIPageControl!
+    @IBOutlet private weak var surveyButton: UIButton!
+    @IBOutlet private weak var pageControlCenterX: NSLayoutConstraint!
     private var viewModel: SurveysViewModel!
 
     override func viewDidLoad() {
@@ -29,8 +31,16 @@ private extension SurveysViewController {
     }
 
     func configurationViewModel() {
-        let viewModel = SurveysViewModel()
+        let configuration = URLSessionConfiguration.default
+        configuration.headers = .default
+        let session = Session(
+            configuration: configuration,
+            interceptor: AuthInterceptor()
+        )
+        let useCase = SurveyAPI(provider: MoyaProvider<NimbleTarget>(session: session))
+        let viewModel = SurveysViewModel(useCase: useCase)
         viewModel.delegate = self
+        viewModel.fetch()
         self.viewModel = viewModel
     }
 
@@ -47,8 +57,28 @@ private extension SurveysViewController {
     }
 
     func configurationPageControl() {
+        pageControlCenterX.constant = (UIScreen.mainWidth - pageControl.height) / 2
         pageControl.transform = CGAffineTransform(rotationAngle: CGFloat.pi/2)
         pageControl.numberOfPages = 0
+    }
+
+    func updateUI() {
+        collectionView.reloadData()
+        pageControl.numberOfPages = viewModel.numberOfItems()
+    }
+
+    func refreshUI() {
+        collectionView.reloadData()
+        collectionView.setContentOffset(.zero, animated: false)
+        pageControl.numberOfPages = viewModel.numberOfItems()
+        surveyButton.isHidden = viewModel.numberOfItems() == 0
+    }
+}
+
+// MARK: - Actions
+private extension SurveysViewController {
+    @IBAction func didTapRefreshButton() {
+        viewModel.fetch()
     }
 }
 
@@ -56,10 +86,15 @@ private extension SurveysViewController {
 extension SurveysViewController: SurveysViewModelDelegate {
     func viewModel(_ viewModel: SurveysViewModel, performAction action: SurveysViewModel.Action) {
         switch action {
-        case .didFail(let error): print(error)
-        case .didFetch: print("didFetch")
-        case .didLoadMore: print("didLoadMore")
-        case .showLoading(let isShowLoading): print("showLoading \(isShowLoading)")
+        case .didFetch: refreshUI()
+        case .didLoadMore: updateUI()
+        case .didFail(let error): showAlert(error: error)
+        case .showLoading(let isLoading):
+            if isLoading {
+                ProgressView.show(on: self)
+            } else {
+                ProgressView.hide()
+            }
         }
     }
 }
@@ -80,5 +115,9 @@ extension SurveysViewController: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegate
 extension SurveysViewController: UICollectionViewDelegate {
-
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offset = scrollView.height
+        let index = Int((scrollView.contentOffset.y / offset).rounded())
+        pageControl.currentPage = index
+    }
 }

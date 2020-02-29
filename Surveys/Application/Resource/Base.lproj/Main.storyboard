@@ -79,11 +79,11 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="7w3-jE-Mqq"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV8-ye-6RJ">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV8-ye-6RJ">
                                 <rect key="frame" x="117" y="712" width="180" height="50"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.36862745099999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="6pO-AZ-ZPu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="6pO-AZ-ZPu"/>
                                     <constraint firstAttribute="height" constant="50" id="WQI-7T-aJm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
@@ -98,33 +98,39 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RE6-2H-UfS">
-                                <rect key="frame" x="367" y="429.5" width="39" height="37"/>
+                                <rect key="frame" x="187.5" y="429.5" width="39" height="37"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.062745098040000002" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uV8-ye-6RJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5NW-bl-0KJ"/>
                             <constraint firstAttribute="bottom" secondItem="gUQ-h8-e3W" secondAttribute="bottom" id="DU7-Ol-hVu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RE6-2H-UfS" secondAttribute="trailing" constant="8" id="HPl-vN-pem"/>
                             <constraint firstItem="gUQ-h8-e3W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nJc-rk-23D"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gUQ-h8-e3W" secondAttribute="trailing" id="ndL-ax-Yx7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uV8-ye-6RJ" secondAttribute="bottom" constant="100" id="sFc-xl-h1k"/>
                             <constraint firstItem="gUQ-h8-e3W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="shk-zA-Cu9"/>
                             <constraint firstItem="RE6-2H-UfS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yTN-4C-wAY"/>
+                            <constraint firstItem="RE6-2H-UfS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3d-Ol-Rh9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="SURVEYS" id="M1J-Ty-iqe">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="QWm-aO-KtQ"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="QWm-aO-KtQ">
+                            <connections>
+                                <action selector="didTapRefreshButton" destination="BYZ-38-t0r" id="ILW-zG-Vmd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="gUQ-h8-e3W" id="5zo-X8-oYh"/>
                         <outlet property="pageControl" destination="RE6-2H-UfS" id="VfU-NA-uSf"/>
+                        <outlet property="pageControlCenterX" destination="z3d-Ol-Rh9" id="Wy5-Pa-Q1f"/>
+                        <outlet property="surveyButton" destination="uV8-ye-6RJ" id="yrw-Gn-Zzv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="72.991071428571431"/>
+            <point key="canvasLocation" x="1191" y="73"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qpY-Kz-7F5">
