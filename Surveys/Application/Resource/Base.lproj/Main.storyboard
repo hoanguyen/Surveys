@@ -1,24 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9vy-us-GSC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SURVEYS-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SurveysViewController" customModule="Surveys" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gUQ-h8-e3W">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.062745098040000002" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dqg-sT-Qaa">
+                                    <size key="itemSize" width="347" height="343"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SurveyCell" id="GZn-Vd-UkB" customClass="SurveyCell" customModule="Surveys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mNz-YY-Wgn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Octave-bangkok" translatesAutoresizingMaskIntoConstraints="NO" id="pBa-hF-4aC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Octave" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcm-c2-qgA">
+                                                    <rect key="frame" x="8" y="150" width="398" height="42"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marriott Bangkok Sukhumvit Hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfd-a1-hu6">
+                                                    <rect key="frame" x="16" y="207" width="382" height="24"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.062745098040000002" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="fcm-c2-qgA" firstAttribute="leading" secondItem="mNz-YY-Wgn" secondAttribute="leading" constant="8" id="6Jk-yP-FnT"/>
+                                                <constraint firstAttribute="trailing" secondItem="pBa-hF-4aC" secondAttribute="trailing" id="HvA-Wb-mwi"/>
+                                                <constraint firstItem="Pfd-a1-hu6" firstAttribute="leading" secondItem="mNz-YY-Wgn" secondAttribute="leading" constant="16" id="V8l-lW-wg6"/>
+                                                <constraint firstItem="Pfd-a1-hu6" firstAttribute="top" secondItem="fcm-c2-qgA" secondAttribute="bottom" constant="15" id="aVh-vj-65P"/>
+                                                <constraint firstItem="pBa-hF-4aC" firstAttribute="top" secondItem="mNz-YY-Wgn" secondAttribute="top" id="iLC-hg-YgP"/>
+                                                <constraint firstItem="fcm-c2-qgA" firstAttribute="top" secondItem="mNz-YY-Wgn" secondAttribute="top" constant="150" id="iVy-h0-vbm"/>
+                                                <constraint firstAttribute="trailing" secondItem="fcm-c2-qgA" secondAttribute="trailing" constant="8" id="lI2-mY-5Rn"/>
+                                                <constraint firstItem="pBa-hF-4aC" firstAttribute="leading" secondItem="mNz-YY-Wgn" secondAttribute="leading" id="raS-fG-1gU"/>
+                                                <constraint firstAttribute="trailing" secondItem="Pfd-a1-hu6" secondAttribute="trailing" constant="16" id="xT5-HR-NfW"/>
+                                                <constraint firstAttribute="bottom" secondItem="pBa-hF-4aC" secondAttribute="bottom" id="xpM-gc-RZM"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.062745098040000002" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="customSize" width="414" height="774"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="Pfd-a1-hu6" id="ucW-b6-Jz9"/>
+                                            <outlet property="imageView" destination="pBa-hF-4aC" id="oeD-Da-8MC"/>
+                                            <outlet property="titleLabel" destination="fcm-c2-qgA" id="xkj-tK-P5x"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lKY-Or-Yko"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7w3-jE-Mqq"/>
+                                </connections>
+                            </collectionView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV8-ye-6RJ">
+                                <rect key="frame" x="117" y="712" width="180" height="50"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.36862745099999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="6pO-AZ-ZPu"/>
+                                    <constraint firstAttribute="height" constant="50" id="WQI-7T-aJm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Take the survey">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RE6-2H-UfS">
+                                <rect key="frame" x="187.5" y="429.5" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.062745098040000002" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uV8-ye-6RJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5NW-bl-0KJ"/>
+                            <constraint firstAttribute="bottom" secondItem="gUQ-h8-e3W" secondAttribute="bottom" id="DU7-Ol-hVu"/>
+                            <constraint firstItem="gUQ-h8-e3W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nJc-rk-23D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gUQ-h8-e3W" secondAttribute="trailing" id="ndL-ax-Yx7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uV8-ye-6RJ" secondAttribute="bottom" constant="100" id="sFc-xl-h1k"/>
+                            <constraint firstItem="gUQ-h8-e3W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="shk-zA-Cu9"/>
+                            <constraint firstItem="RE6-2H-UfS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yTN-4C-wAY"/>
+                            <constraint firstItem="RE6-2H-UfS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z3d-Ol-Rh9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="SURVEYS" id="M1J-Ty-iqe">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="QWm-aO-KtQ">
+                            <connections>
+                                <action selector="didTapRefreshButton" destination="BYZ-38-t0r" id="ILW-zG-Vmd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="gUQ-h8-e3W" id="5zo-X8-oYh"/>
+                        <outlet property="pageControl" destination="RE6-2H-UfS" id="VfU-NA-uSf"/>
+                        <outlet property="pageControlCenterX" destination="z3d-Ol-Rh9" id="Wy5-Pa-Q1f"/>
+                        <outlet property="surveyButton" destination="uV8-ye-6RJ" id="yrw-Gn-Zzv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1191" y="73"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qpY-Kz-7F5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9vy-us-GSC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="QfU-Sl-Q56">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.062745098040000002" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="I5I-JN-wRc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dj-Ye-CmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="72.991071428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Octave-bangkok" width="315" height="236"/>
+    </resources>
 </document>

@@ -19,6 +19,24 @@
 		FAC01FD82408CC7D0096F3BC /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FD72408CC7D0096F3BC /* Token.swift */; };
 		FAC01FDC2408D00F0096F3BC /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FDB2408D00F0096F3BC /* Survey.swift */; };
 		FAC01FE02408D21B0096F3BC /* NimbleTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FDF2408D21B0096F3BC /* NimbleTarget.swift */; };
+		FAC01FE324090EBB0096F3BC /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FE224090EBB0096F3BC /* Measure.swift */; };
+		FAC01FE524090F260096F3BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FE424090F260096F3BC /* Constants.swift */; };
+		FAC01FE7240910F70096F3BC /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FE6240910F70096F3BC /* UIScreen.swift */; };
+		FAC01FEB240912690096F3BC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FEA240912690096F3BC /* UIView.swift */; };
+		FAC01FEF240914B80096F3BC /* SurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FEE240914B80096F3BC /* SurveyCell.swift */; };
+		FAC01FF1240914ED0096F3BC /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF0240914ED0096F3BC /* SurveyViewModel.swift */; };
+		FAC01FF3240915E40096F3BC /* SurveysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF2240915E40096F3BC /* SurveysViewModel.swift */; };
+		FAC01FF5240916740096F3BC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF4240916740096F3BC /* Errors.swift */; };
+		FAC01FF7240917DE0096F3BC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF6240917DE0096F3BC /* String.swift */; };
+		FAC01FF92409192C0096F3BC /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FF82409192C0096F3BC /* UICollectionView.swift */; };
+		FAC01FFB240919B30096F3BC /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FFA240919B30096F3BC /* UIImageView.swift */; };
+		FAC01FFD24091A960096F3BC /* SurveyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FFC24091A960096F3BC /* SurveyAPI.swift */; };
+		FAC01FFF240A1AAB0096F3BC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FFE240A1AAB0096F3BC /* UIViewController.swift */; };
+		FAC02001240A1AE10096F3BC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02000240A1AE10096F3BC /* Strings.swift */; };
+		FAC02006240A1CB20096F3BC /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC02005240A1CB20096F3BC /* ProgressView.swift */; };
+		FAC02008240A1CC50096F3BC /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC02007240A1CC50096F3BC /* ProgressView.xib */; };
+		FAC0200E240A346B0096F3BC /* AuthInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0200D240A346B0096F3BC /* AuthInterceptor.swift */; };
+		FAC02010240A3D470096F3BC /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0200F240A3D470096F3BC /* URLRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +70,24 @@
 		FAC01FD72408CC7D0096F3BC /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		FAC01FDB2408D00F0096F3BC /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		FAC01FDF2408D21B0096F3BC /* NimbleTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleTarget.swift; sourceTree = "<group>"; };
+		FAC01FE224090EBB0096F3BC /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		FAC01FE424090F260096F3BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAC01FE6240910F70096F3BC /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		FAC01FEA240912690096F3BC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FAC01FEE240914B80096F3BC /* SurveyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCell.swift; sourceTree = "<group>"; };
+		FAC01FF0240914ED0096F3BC /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		FAC01FF2240915E40096F3BC /* SurveysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysViewModel.swift; sourceTree = "<group>"; };
+		FAC01FF4240916740096F3BC /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		FAC01FF6240917DE0096F3BC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FAC01FF82409192C0096F3BC /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		FAC01FFA240919B30096F3BC /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		FAC01FFC24091A960096F3BC /* SurveyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAPI.swift; sourceTree = "<group>"; };
+		FAC01FFE240A1AAB0096F3BC /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		FAC02000240A1AE10096F3BC /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		FAC02005240A1CB20096F3BC /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		FAC02007240A1CC50096F3BC /* ProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressView.xib; sourceTree = "<group>"; };
+		FAC0200D240A346B0096F3BC /* AuthInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInterceptor.swift; sourceTree = "<group>"; };
+		FAC0200F240A3D470096F3BC /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +175,7 @@
 		FAC01FC82408C8930096F3BC /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				FAC01FE124090EA20096F3BC /* Constants */,
 				FAC01FCD2408C9C20096F3BC /* Resource */,
 				FA2279482407705C0099B8CF /* AppDelegate.swift */,
 			);
@@ -165,6 +202,13 @@
 		FAC01FCB2408C8C70096F3BC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FAC01FE6240910F70096F3BC /* UIScreen.swift */,
+				FAC01FEA240912690096F3BC /* UIView.swift */,
+				FAC01FF6240917DE0096F3BC /* String.swift */,
+				FAC01FF82409192C0096F3BC /* UICollectionView.swift */,
+				FAC01FFA240919B30096F3BC /* UIImageView.swift */,
+				FAC01FFE240A1AAB0096F3BC /* UIViewController.swift */,
+				FAC0200F240A3D470096F3BC /* URLRequest.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,6 +216,8 @@
 		FAC01FCC2408C8D00096F3BC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAC02002240A1BC90096F3BC /* ProgressView */,
+				FAC01FEC2409145E0096F3BC /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC01FD42408CBD50096F3BC /* SurveysViewController.swift */,
+				FAC01FF2240915E40096F3BC /* SurveysViewModel.swift */,
 			);
 			path = Surveys;
 			sourceTree = "<group>";
@@ -216,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC01FD72408CC7D0096F3BC /* Token.swift */,
+				FAC0200D240A346B0096F3BC /* AuthInterceptor.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -224,8 +272,46 @@
 			isa = PBXGroup;
 			children = (
 				FAC01FDF2408D21B0096F3BC /* NimbleTarget.swift */,
+				FAC01FFC24091A960096F3BC /* SurveyAPI.swift */,
 			);
 			path = NimbleAPI;
+			sourceTree = "<group>";
+		};
+		FAC01FE124090EA20096F3BC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FE224090EBB0096F3BC /* Measure.swift */,
+				FAC01FE424090F260096F3BC /* Constants.swift */,
+				FAC01FF4240916740096F3BC /* Errors.swift */,
+				FAC02000240A1AE10096F3BC /* Strings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FAC01FEC2409145E0096F3BC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FED240914900096F3BC /* SurveyCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAC01FED240914900096F3BC /* SurveyCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAC01FEE240914B80096F3BC /* SurveyCell.swift */,
+				FAC01FF0240914ED0096F3BC /* SurveyViewModel.swift */,
+			);
+			path = SurveyCell;
+			sourceTree = "<group>";
+		};
+		FAC02002240A1BC90096F3BC /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				FAC02005240A1CB20096F3BC /* ProgressView.swift */,
+				FAC02007240A1CC50096F3BC /* ProgressView.xib */,
+			);
+			path = ProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA227955240770620099B8CF /* LaunchScreen.storyboard in Resources */,
+				FAC02008240A1CC50096F3BC /* ProgressView.xib in Resources */,
 				FA227952240770620099B8CF /* Assets.xcassets in Resources */,
 				FA2279502407705C0099B8CF /* Main.storyboard in Resources */,
 			);
@@ -432,12 +519,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC01FE324090EBB0096F3BC /* Measure.swift in Sources */,
+				FAC01FF5240916740096F3BC /* Errors.swift in Sources */,
+				FAC02001240A1AE10096F3BC /* Strings.swift in Sources */,
+				FAC01FF1240914ED0096F3BC /* SurveyViewModel.swift in Sources */,
+				FAC01FFF240A1AAB0096F3BC /* UIViewController.swift in Sources */,
+				FAC01FF3240915E40096F3BC /* SurveysViewModel.swift in Sources */,
 				FAC01FD32408CBA00096F3BC /* SurveyDetailViewController.swift in Sources */,
+				FAC01FEB240912690096F3BC /* UIView.swift in Sources */,
 				FAC01FD82408CC7D0096F3BC /* Token.swift in Sources */,
 				FAC01FE02408D21B0096F3BC /* NimbleTarget.swift in Sources */,
+				FAC01FE7240910F70096F3BC /* UIScreen.swift in Sources */,
+				FAC0200E240A346B0096F3BC /* AuthInterceptor.swift in Sources */,
+				FAC02006240A1CB20096F3BC /* ProgressView.swift in Sources */,
 				FAC01FDC2408D00F0096F3BC /* Survey.swift in Sources */,
+				FAC02010240A3D470096F3BC /* URLRequest.swift in Sources */,
+				FAC01FFB240919B30096F3BC /* UIImageView.swift in Sources */,
 				FAC01FD52408CBD50096F3BC /* SurveysViewController.swift in Sources */,
 				FA2279492407705C0099B8CF /* AppDelegate.swift in Sources */,
+				FAC01FFD24091A960096F3BC /* SurveyAPI.swift in Sources */,
+				FAC01FEF240914B80096F3BC /* SurveyCell.swift in Sources */,
+				FAC01FE524090F260096F3BC /* Constants.swift in Sources */,
+				FAC01FF7240917DE0096F3BC /* String.swift in Sources */,
+				FAC01FF92409192C0096F3BC /* UICollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -583,7 +687,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -601,6 +705,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QM237XU2M3;
 				INFOPLIST_FILE = Surveys/Application/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -608,7 +713,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.hoanguyen.Surveys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -620,6 +725,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QM237XU2M3;
 				INFOPLIST_FILE = Surveys/Application/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -627,7 +733,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.hoanguyen.Surveys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -640,7 +746,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QM237XU2M3;
 				INFOPLIST_FILE = SurveysTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,7 +755,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.hoanguyen.SurveysTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Surveys.app/Surveys";
 			};
 			name = Debug;
@@ -663,7 +769,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QM237XU2M3;
 				INFOPLIST_FILE = SurveysTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -672,7 +778,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.hoanguyen.SurveysTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Surveys.app/Surveys";
 			};
 			name = Release;
