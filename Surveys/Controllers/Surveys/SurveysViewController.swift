@@ -120,4 +120,10 @@ extension SurveysViewController: UICollectionViewDelegate {
         let index = Int((scrollView.contentOffset.y / offset).rounded())
         pageControl.currentPage = index
     }
+
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if viewModel.shouldLoadMore(at: indexPath) {
+            viewModel.loadMore()
+        }
+    }
 }

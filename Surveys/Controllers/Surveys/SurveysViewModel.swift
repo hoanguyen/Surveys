@@ -17,6 +17,7 @@ final class SurveysViewModel {
     private let useCase: SurveyUseCase
     private var page: Int = 1
     private var isLoading: Bool = false
+    private var shouldNotLoadMore = false
     weak var delegate: SurveysViewModelDelegate?
 
     enum Action {
@@ -49,7 +50,30 @@ extension SurveysViewModel {
             case .success(let data):
                 this.surveys = data
                 this.page = 1
+                this.shouldNotLoadMore = false
                 this.delegate?.viewModel(this, performAction: .didFetch)
+            case .failure(let error):
+                this.delegate?.viewModel(this, performAction: .didFail(error))
+            }
+            completion?()
+        }
+    }
+
+    func loadMore(completion: (() -> Void)? = nil) {
+        if isLoading { return }
+        isLoading = true
+        useCase.get(page: page + 1, perPage: Configuration.perPage) { [weak self] result in
+            guard let this = self else { return }
+            this.isLoading = false
+            switch result {
+            case .success(let data):
+                if data.isEmpty {
+                    this.shouldNotLoadMore = true
+                } else {
+                    this.surveys.append(contentsOf: data)
+                    this.page += 1
+                }
+                this.delegate?.viewModel(this, performAction: .didLoadMore)
             case .failure(let error):
                 this.delegate?.viewModel(this, performAction: .didFail(error))
             }
@@ -70,5 +94,9 @@ extension SurveysViewModel {
         }
 
         return SurveyViewModel(survey: surveys[index])
+    }
+
+    func shouldLoadMore(at indexPath: IndexPath) -> Bool {
+        return indexPath.item == surveys.count - 4 && !shouldNotLoadMore
     }
 }
