@@ -21,6 +21,13 @@ final class SurveysViewController: UIViewController {
         configurationLayout()
         configurationViewModel()
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailViewModel = try? viewModel.viewModelForItem(at: pageControl.currentPage),
+            let controller = segue.destination as? SurveyDetailViewController
+            else { return }
+        controller.viewModel = detailViewModel
+    }
 }
 
 // MARK: - Private functions

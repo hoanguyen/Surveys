@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9vy-us-GSC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -96,6 +97,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4HG-0C-jA7" kind="show" identifier="ShowSurveyDetail" id="EJz-1b-k2e"/>
+                                </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="RE6-2H-UfS">
                                 <rect key="frame" x="187.5" y="429.5" width="39" height="37"/>
@@ -115,6 +119,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="SURVEYS" id="M1J-Ty-iqe">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Kjv-uB-ZQ2"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="QWm-aO-KtQ">
                             <connections>
                                 <action selector="didTapRefreshButton" destination="BYZ-38-t0r" id="ILW-zG-Vmd"/>
@@ -131,6 +136,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1191" y="73"/>
+        </scene>
+        <!--Survey Detail View Controller-->
+        <scene sceneID="ahQ-69-l3z">
+            <objects>
+                <viewController id="4HG-0C-jA7" customClass="SurveyDetailViewController" customModule="Surveys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="haF-nm-DKc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Octave-bangkok" translatesAutoresizingMaskIntoConstraints="NO" id="KGB-BY-JmW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Octave" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8h-Uj-1CJ">
+                                <rect key="frame" x="8" y="238" width="398" height="42"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marriott Bangkok Sukhumvit Hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVU-Ai-Vjv">
+                                <rect key="frame" x="16" y="295" width="382" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.062745098040000002" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hgM-fE-11l" firstAttribute="bottom" secondItem="KGB-BY-JmW" secondAttribute="bottom" id="1pf-fC-iIv"/>
+                            <constraint firstItem="KGB-BY-JmW" firstAttribute="leading" secondItem="hgM-fE-11l" secondAttribute="leading" id="2zB-9O-qT8"/>
+                            <constraint firstItem="hgM-fE-11l" firstAttribute="trailing" secondItem="CVU-Ai-Vjv" secondAttribute="trailing" constant="16" id="5YA-yK-ibo"/>
+                            <constraint firstItem="H8h-Uj-1CJ" firstAttribute="top" secondItem="hgM-fE-11l" secondAttribute="top" constant="150" id="9yw-FA-W4d"/>
+                            <constraint firstItem="CVU-Ai-Vjv" firstAttribute="top" secondItem="H8h-Uj-1CJ" secondAttribute="bottom" constant="15" id="GOz-P2-fwS"/>
+                            <constraint firstItem="H8h-Uj-1CJ" firstAttribute="leading" secondItem="hgM-fE-11l" secondAttribute="leading" constant="8" id="Gwf-uZ-328"/>
+                            <constraint firstItem="hgM-fE-11l" firstAttribute="trailing" secondItem="H8h-Uj-1CJ" secondAttribute="trailing" constant="8" id="KkF-Au-0AH"/>
+                            <constraint firstItem="KGB-BY-JmW" firstAttribute="top" secondItem="hgM-fE-11l" secondAttribute="top" id="Wgd-x5-Z5v"/>
+                            <constraint firstItem="hgM-fE-11l" firstAttribute="trailing" secondItem="KGB-BY-JmW" secondAttribute="trailing" id="a33-QG-zZ0"/>
+                            <constraint firstItem="CVU-Ai-Vjv" firstAttribute="leading" secondItem="hgM-fE-11l" secondAttribute="leading" constant="16" id="zKf-Hc-hp4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hgM-fE-11l"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CxA-vK-tlx"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="CVU-Ai-Vjv" id="wj2-XR-cWz"/>
+                        <outlet property="imageView" destination="KGB-BY-JmW" id="O9V-oC-Esj"/>
+                        <outlet property="titleLabel" destination="H8h-Uj-1CJ" id="tbS-3q-Ekj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZY-Fe-QEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qpY-Kz-7F5">
