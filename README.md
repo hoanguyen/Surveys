@@ -50,7 +50,7 @@ Or by manual
 
 ## Demo
 
-![Screen-Recording-2020-03-02-at-12.15.47-PM](/Users/macbook/Downloads/Surveys-CodeChallenge-master/images/Screen-Recording-2020-03-02-at-12.15.47-PM.gif)
+![Screen-Recording-2020-03-02-at-12.15.47-PM](./images/survey480.gif)
 
 ## Authors
 
