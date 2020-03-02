@@ -17,6 +17,10 @@
 		FA756B26240BAF5700096147 /* Token-Success.json in Resources */ = {isa = PBXBuildFile; fileRef = FA756B25240BAF5700096147 /* Token-Success.json */; };
 		FA756B28240BAF6C00096147 /* Surveys-Success.json in Resources */ = {isa = PBXBuildFile; fileRef = FA756B27240BAF6C00096147 /* Surveys-Success.json */; };
 		FA756B2B240BC12F00096147 /* SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA756B2A240BC12F00096147 /* SurveyTests.swift */; };
+		FA756B2E240CB56E00096147 /* SurveysViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA756B2D240CB56E00096147 /* SurveysViewModelTests.swift */; };
+		FA756B30240CB58400096147 /* SurveyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA756B2F240CB58300096147 /* SurveyViewModelTests.swift */; };
+		FA756B33240CB71A00096147 /* MockSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA756B32240CB71A00096147 /* MockSurvey.swift */; };
+		FA756B35240CB81100096147 /* MockSurversProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA756B34240CB81100096147 /* MockSurversProvider.swift */; };
 		FAC01FD32408CBA00096F3BC /* SurveyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FD22408CBA00096F3BC /* SurveyDetailViewController.swift */; };
 		FAC01FD52408CBD50096F3BC /* SurveysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FD42408CBD50096F3BC /* SurveysViewController.swift */; };
 		FAC01FD82408CC7D0096F3BC /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC01FD72408CC7D0096F3BC /* Token.swift */; };
@@ -71,6 +75,10 @@
 		FA756B25240BAF5700096147 /* Token-Success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Token-Success.json"; sourceTree = "<group>"; };
 		FA756B27240BAF6C00096147 /* Surveys-Success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Surveys-Success.json"; sourceTree = "<group>"; };
 		FA756B2A240BC12F00096147 /* SurveyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyTests.swift; sourceTree = "<group>"; };
+		FA756B2D240CB56E00096147 /* SurveysViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysViewModelTests.swift; sourceTree = "<group>"; };
+		FA756B2F240CB58300096147 /* SurveyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModelTests.swift; sourceTree = "<group>"; };
+		FA756B32240CB71A00096147 /* MockSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSurvey.swift; sourceTree = "<group>"; };
+		FA756B34240CB81100096147 /* MockSurversProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSurversProvider.swift; sourceTree = "<group>"; };
 		FAC01FD22408CBA00096F3BC /* SurveyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailViewController.swift; sourceTree = "<group>"; };
 		FAC01FD42408CBD50096F3BC /* SurveysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveysViewController.swift; sourceTree = "<group>"; };
 		FAC01FD72408CC7D0096F3BC /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
@@ -172,6 +180,8 @@
 		FA22795E240770620099B8CF /* SurveysTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA756B31240CB6F000096147 /* MockObjects */,
+				FA756B2C240CB4E500096147 /* ViewModel */,
 				FA756B29240BC11E00096147 /* Model */,
 				FA756B21240BAE7F00096147 /* Network */,
 				FA227961240770620099B8CF /* Info.plist */,
@@ -203,6 +213,24 @@
 				FA756B2A240BC12F00096147 /* SurveyTests.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FA756B2C240CB4E500096147 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA756B2D240CB56E00096147 /* SurveysViewModelTests.swift */,
+				FA756B2F240CB58300096147 /* SurveyViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA756B31240CB6F000096147 /* MockObjects */ = {
+			isa = PBXGroup;
+			children = (
+				FA756B32240CB71A00096147 /* MockSurvey.swift */,
+				FA756B34240CB81100096147 /* MockSurversProvider.swift */,
+			);
+			path = MockObjects;
 			sourceTree = "<group>";
 		};
 		FAC01FC82408C8930096F3BC /* Application */ = {
@@ -584,8 +612,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA756B2E240CB56E00096147 /* SurveysViewModelTests.swift in Sources */,
 				FA756B23240BAF0600096147 /* NetworkTests.swift in Sources */,
+				FA756B30240CB58400096147 /* SurveyViewModelTests.swift in Sources */,
+				FA756B33240CB71A00096147 /* MockSurvey.swift in Sources */,
 				FA756B2B240BC12F00096147 /* SurveyTests.swift in Sources */,
+				FA756B35240CB81100096147 /* MockSurversProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@ final class SurveyTests: QuickSpec {
             context("When initializing with dummy data", closure: {
                 var survey: Survey!
                 beforeEach {
-                    survey = Survey(id: "id", title: "title", description: "description", coverImageUrl: "coverImageURL")
+                    survey = Survey.dummy
                 }
                 it("has value for each properties as expected") {
                     expect(survey.id) == "id"
